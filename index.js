@@ -1131,14 +1131,74 @@
 // console.log(findLar(str1));
 
 // How to reverse a string
-let str1 = "Hello World";
+// let str1 = "Hello World";
 
-function reverse(str) {
-  let newStr = "";
-  for (let i = str.length - 1; i >= 0; i--) {
-    newStr += str[i];
+// function reverse(str) {
+//   let newStr = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     newStr += str[i];
+//   }
+//   return newStr;
+// }
+// console.log(reverse(str1));
+
+// TODO: From the beginning 
+
+// ? Loops
+
+// Find the index of target in array
+// let arr = [2,10,8,6,19,7]
+
+// function findNumber(arr, target){
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] === target){
+//             return i
+//         }
+//     }
+//     return -1
+// }
+
+// console.log(findNumber(arr, 1));
+
+// Function that returns negative numbers in an array
+// function countNegative(arr){
+//   let numbers = 0;
+//   for(let i = 0; i < arr.length; i++){
+//     if(arr[i] < 0){
+//       numbers++
+//     }
+//   }
+//   return numbers
+// }
+
+// let arr = [-1, 2, -4, 6, 7, -9]
+
+// console.log(countNegative(arr))
+
+// Function that return the largest number in an array
+// function findLargest(arr){
+//   let largest = Number.NEGATIVE_INFINITY
+//   for(let i = 0; i < arr.length; i++){
+//     if(arr[i] > largest){
+//       largest = arr[i]
+//     }
+//   }
+//   return largest
+// }
+
+// let arr = [-1, -4, -6, -7, -9]
+// console.log(findLargest(arr))
+
+// Function that return the smallest number in an array
+function findSmallest(arr){
+  let smallest = Number.POSITIVE_INFINITY
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i] < smallest){
+      smallest = arr[i]
+    }
   }
-  return newStr;
+  return smallest
 }
 
-console.log(str1);
+let arr = [-1, -4, -6, -7, -9]
+console.log(findSmallest(arr))
