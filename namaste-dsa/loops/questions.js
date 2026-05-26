@@ -17,3 +17,6 @@
 
 // Q6 How loop within a loop works
 // Solution : Print total number of combinations of outer loop and inner loop
+
+// Q7 Find the count of digits in a number
+// Solution : Count of digits in the number
