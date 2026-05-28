@@ -82,15 +82,28 @@
 // In total this will print 9 combinations of i and j (0,0), (0,1), (0,2), (1,0), (1,1), (1,2), (2,0), (2,1), (2,2)
 
 // Q7: Find the count of digits in a number
-function countDigits(num){
-    if(num === 0) return 1 /* edge case */
-    num = Math.abs(num) /* this will convert negative number to positive number */
-    let count = 0;
-    while (num > 0){
-        num = Math.floor(num / 10); /* this will remove the last digit of the number */
-        count++
-    }
-    return count
-}
+// function countDigits(num){
+//     if(num === 0) return 1 /* edge case */
+//     num = Math.abs(num) /* this will convert negative number to positive number */
+//     let count = 0;
+//     while (num > 0){
+//         num = Math.floor(num / 10); /* this will remove the last digit of the number */
+//         count++
+//     }
+//     return count
+// }
 
-console.log(countDigits(259))
+// console.log(countDigits(259))
+
+// Q8: Find the number is Palindrome or not (Leetcode Q9)
+var isPalindrome = function(x) {
+    if(x < 0) return false;
+    let xCopy = x;
+    let rev = 0;
+    while(x > 0){
+        let rem = x % 10;
+        rev = rev * 10 + rem
+        x = Math.floor(x/10)
+    }
+    return xCopy === rev
+};

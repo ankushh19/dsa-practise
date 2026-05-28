@@ -20,3 +20,6 @@
 
 // Q7 Find the count of digits in a number
 // Solution : Count of digits in the number
+
+// Q8: Find the number is Palindrome or not (Leetcode Q9)
+// Solution : Check if the number is same when reversed
