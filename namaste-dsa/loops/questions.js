@@ -23,3 +23,6 @@
 
 // Q8: Find the number is Palindrome or not (Leetcode Q9)
 // Solution : Check if the number is same when reversed
+
+// Q9: Reverse a number but it should handle negative number and within 32-bit range (Leetcode Q7)
+// Solution : Reverse the digits of the number

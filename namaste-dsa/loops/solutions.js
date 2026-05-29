@@ -96,14 +96,29 @@
 // console.log(countDigits(259))
 
 // Q8: Find the number is Palindrome or not (Leetcode Q9)
-var isPalindrome = function(x) {
-    if(x < 0) return false;
+// var isPalindrome = function(x) {
+//     if(x < 0) return false;
+//     let xCopy = x;
+//     let rev = 0;
+//     while(x > 0){
+//         let rem = x % 10;
+//         rev = rev * 10 + rem
+//         x = Math.floor(x/10)
+//     }
+//     return xCopy === rev
+// };
+
+// Q9: Reverse a number but it should handle negative number and within 32-bit range (Leetcode Q7)
+var reverse = function(x) {
     let xCopy = x;
-    let rev = 0;
+    let rev = 0
+    x = Math.abs(x)
     while(x > 0){
         let rem = x % 10;
         rev = rev * 10 + rem
-        x = Math.floor(x/10)
+        x = Math.floor(x / 10)
     }
-    return xCopy === rev
+    let limit = Math.pow(2, 31)
+    if(rev < -limit || rev > limit) return 0
+    return xCopy < 0 ? -rev : rev
 };
