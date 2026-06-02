@@ -75,6 +75,7 @@
 // console.log(findSecondLargest(arr))
 
 // Q6: How loop within a loop works
+// for(let i = 0; i < 3; i++){
 //   for(let j = 0; j < 3; j++){ /* This loop will run 3 times for each iteration of the outer loop */
 //     console.log(`i: ${i}, j: ${j}`) /* this will print all combinations of i and j */
 //   }
